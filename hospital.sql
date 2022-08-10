@@ -218,6 +218,11 @@ FROM take
 INNER JOIN doctor ON take.doctor_id=doctor.doctor_id
 inner join patient ON take.patient_id=patient.patient_id;
 
+#Doctor and nurse
+SELECT doctor_name,nurse_name
+FROM assist
+INNER JOIN doctor ON assist.doctor_id=doctor.doctor_id
+inner join nurse ON assist.nurse_id=nurse.nurse_id;
 
 #Patient and pills name
 SELECT fullname_p,pills_name
